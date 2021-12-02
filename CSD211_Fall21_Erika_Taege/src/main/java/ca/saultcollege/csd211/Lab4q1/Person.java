@@ -13,17 +13,20 @@ public class Person {
     // Attributes of a person
     // defined as instance variables
     private int age;
-    private int height; // in cm
-    private int weight ;//  in kg 
+    private double height; // in cm
+    private double weight ;//  in kg 
     private String firstname;
     private String lastname;
     private char gender;
-    public Person(String firstname, String lastname, int age, char gender) {
-        
-     }
+    
 
-    Person(String joe, String student, int i, char c) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Person(String firstname, String lastname,int age, double height, double weight, char gender) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.age = age;
+        this.height = height;
+        this.weight = weight;
+        this.gender = gender;
     }
     @Override
     public String toString() {
@@ -37,16 +40,16 @@ public class Person {
      public void setAge(int age) {
         this.age = age;
     }
-     public int getHeight() {
+     public double getHeight() {
         return height;
     }
-    public void setHeight(int height) {
+    public void setHeight(double height) {
         this.height = height;
     }
-    public int getWeight() {
+    public double getWeight() {
         return weight;
     }
-    public void setWeight(int weight) {
+    public void setWeight(double weight) {
         this.weight = weight;
     }
     public String getFirstname() {

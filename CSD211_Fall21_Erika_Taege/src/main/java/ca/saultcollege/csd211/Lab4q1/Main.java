@@ -16,8 +16,8 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       new App.run();
-       Person joe=new Person("Joe", "Student", 23, 'M');
+       new App().run();
+       
     }
     
 }
