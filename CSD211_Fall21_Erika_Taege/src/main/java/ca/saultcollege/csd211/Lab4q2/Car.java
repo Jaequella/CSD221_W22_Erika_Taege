@@ -16,10 +16,21 @@ public class Car {
     private String Make;
     private String Model;
     private int Year;
-    private Person Owner;
     private String VIN;
+    private int COUNT;
+    public Car(){
+    this.Make="Make not assigned";
+    this.Model="Model not assigned";
+    this.Year=0;
+    this.VIN="VIN not assigned";
+    }
+    
     public Car(String Make, String Model, int Year, String Owner, String VIN){
-        
+        this.Make=Make;
+        this.Model=Model;
+        this.Year= Year;
+        this.VIN=VIN;
+        this.COUNT++;
     }
     public String getMake() {
         return Make;
