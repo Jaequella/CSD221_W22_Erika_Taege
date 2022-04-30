@@ -16,7 +16,7 @@ public class DiscMag extends Magazine{
     public DiscMag(String title, double price,String curIssue, int copies) {
         super(title, price, orderQty, curIssue, copies);
     }
-    
+    //instructions unclear on what to do WITH disc mag?
     public void receiveNewIssues(Date newIssue){
         
     }
