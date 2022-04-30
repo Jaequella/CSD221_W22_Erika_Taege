@@ -132,7 +132,10 @@ public class App {
     }
 
     private void listDiscMagazine() {
-        
+        for (int i=0; i<DiscMagazineList.length;i++){
+            if(DiscMagazineList[i]!= null)
+             System.out.println((i+1) + ". "+DiscMagazineList[i].getTitle());
+        }
     }
      private String getInput(String s) {
         String ss = input.nextLine();
